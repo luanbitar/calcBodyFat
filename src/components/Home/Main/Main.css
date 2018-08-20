@@ -1,0 +1,38 @@
+.Form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: calc(100vh - 64px);
+  margin-top: 64px;
+  background-color: #d7eaf6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5vw 0 20px 0;
+}
+
+div.Input, label.Input {
+  width: 320px;
+  margin-bottom: 1rem;
+}
+
+.Actions {
+  padding-top: 0;
+}
+
+.Actions button {
+  text-transform: none;
+}
+
+@media (max-width: 599px) {
+  .Form {
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+  }
+}
